@@ -22,7 +22,6 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  
   Gender selectedGender = Gender.other;
 
   int height = 180;
@@ -47,8 +46,12 @@ class _InputPageState extends State<InputPage> {
       appBar: AppBar(
         title: const Text(
           'BMI Calculator',
+          style: TextStyle(
+            color: Colors.white,
+          ),
         ),
         centerTitle: true,
+        backgroundColor: Colors.transparent,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
